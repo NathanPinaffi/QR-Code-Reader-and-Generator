@@ -1,0 +1,18 @@
+{
+  "name": "qr-code-reader-and-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.22.7",
+    "prompt-sync": "^4.2.0",
+    "qrcode": "^1.5.3",
+    "qrcode-reader": "^1.0.4"
+  }
+}
