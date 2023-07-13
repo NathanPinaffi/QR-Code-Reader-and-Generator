@@ -2,10 +2,10 @@ const QRCode = require('qrcode');
 
 const prompt = require("prompt-sync")();
 
-const nameArchive = prompt("Digite o nome do arquivo: ");
-const message = prompt("Digite a mensagem: ");
+const fileName = prompt("Digite o nome do arquivo: ");
+const content = prompt("Digite a mensagem: ");
 
-QRCode.toFile(`./img/${nameArchive}.png`, `${message}`, {
+QRCode.toFile(`./img/${fileName}.png`, `${content}`, {
     errorCorrectionLevel: 'H'
 }, function(err) {
     if(err) throw err;
