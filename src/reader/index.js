@@ -5,10 +5,10 @@ const fs = require('fs');
 
 const qrCodeReader = require('qrcode-reader');
 
-const nameArchive = prompt("Nome do arquivo para ler: ");
-const extensionArchive = prompt("Extensão do arquivo: ");
+const fileName = prompt("Nome do arquivo para ler: ");
+const fileExtension = prompt("Extensão do arquivo: ");
 
-const buffer = fs.readFileSync(`../img/${nameArchive}.${extensionArchive}`);
+const buffer = fs.readFileSync(`../img/${fileName}.${fileExtension}`);
 
 Jimp.read(buffer, function(err, image) {
     if(err) {
